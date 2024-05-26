@@ -21,3 +21,5 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+\*\* Not to be deployed publicly, using images which we don't have rights to
