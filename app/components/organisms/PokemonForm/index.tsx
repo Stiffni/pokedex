@@ -22,7 +22,7 @@ export function PokemonSearch({
 
         // @ts-expect-error - would normally use another library
         // for form schema, like yup along with react-hook-form
-        const pokemonName = event.target.name.value;
+        const pokemonName = event.target.elements.name.value;
 
         try {
           const result = await getPokemonByName(pokemonName);
@@ -34,7 +34,12 @@ export function PokemonSearch({
         }
       }}
     >
-      <Search inputName="name" placeholder="Pikachu" loading={loading} />
+      <Search
+        inputName="name"
+        inputLabel="Pokemon Name"
+        placeholder="Pikachu"
+        loading={loading}
+      />
     </form>
   );
 }
